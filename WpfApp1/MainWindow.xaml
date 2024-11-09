@@ -7,7 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="файл" Height="25">
+                <MenuItem.Icon>
+                    <Image Source="\\sysprofiles.adm.vvsu.ru\STUDENTRPROFILES$\richard_mg\Desktop\Новая папка\images\thezdox.jpg"></Image>
+                </MenuItem.Icon>
+            <MenuItem Header="открыть">
+                <MenuItem Header="файл 1" Click= "MenuItem_Click_1"></MenuItem>
+                    <MenuItem Header="файл 2" Click= "MenuItem_Click_2"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="сохронить"></MenuItem>
+            <Separator/>
+            <MenuItem Header="выйти" Click="MenuItem_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
         <Button Content="далее" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="355,204,0,0" Click="Button_Click"/>
+        <Image Name="DisplayImage" HorizontalAlignment="Left" Height="172" Margin="120,80,0,0" VerticalAlignment="Top" Width="560"/>
 
     </Grid>
 </Window>
