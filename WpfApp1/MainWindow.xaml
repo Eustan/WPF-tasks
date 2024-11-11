@@ -12,17 +12,19 @@
                 <MenuItem.Icon>
                     <Image Source="\\sysprofiles.adm.vvsu.ru\STUDENTRPROFILES$\richard_mg\Desktop\Новая папка\images\thezdox.jpg"></Image>
                 </MenuItem.Icon>
-            <MenuItem Header="открыть">
-                <MenuItem Header="файл 1" Click= "MenuItem_Click_1"></MenuItem>
-                    <MenuItem Header="файл 2" Click= "MenuItem_Click_2"></MenuItem>
-            </MenuItem>
-            <MenuItem Header="сохронить"></MenuItem>
-            <Separator/>
-            <MenuItem Header="выйти" Click="MenuItem_Click"></MenuItem>
+                <MenuItem Header="открыть" Click="MenuItem_Click_1">
+                </MenuItem>
+                <MenuItem Header="сохронить"></MenuItem>
+                <Separator/>
+                <MenuItem Header="выйти" Click="MenuItem_Click"></MenuItem>
             </MenuItem>
         </Menu>
         <Button Content="далее" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="355,204,0,0" Click="Button_Click"/>
         <Image Name="DisplayImage" HorizontalAlignment="Left" Height="172" Margin="120,80,0,0" VerticalAlignment="Top" Width="560"/>
+        <TextBlock Name="TextBlock" HorizontalAlignment="Left" Margin="664,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="141" Width="128"/>
+        <PasswordBox HorizontalAlignment="Left" Height="29" Margin="311,249,0,0" VerticalAlignment="Top" Width="182"/>
+        <TextBox HorizontalAlignment="Left" Height="104" Margin="26,44,0,0" TextWrapping="Wrap" Text="ахахахахахахахахахахахха" VerticalAlignment="Top" Width="232"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="78,257,0,0" VerticalAlignment="Top" Width="105" Height="19" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
