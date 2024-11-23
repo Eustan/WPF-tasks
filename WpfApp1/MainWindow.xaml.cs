@@ -54,5 +54,12 @@ namespace WpfApp1
         {
             TextBlock.Text += "хрущь";
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            window1.Show();
+            this.Close();
+        }
     }
 }
