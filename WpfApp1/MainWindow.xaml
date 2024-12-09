@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Menu Height="25" VerticalAlignment="Top">
-            <MenuItem Header="файл" Height="25">
+            <MenuItem Header="файл" Height="25" Click="MenuItem_Click_2">
                 <MenuItem.Icon>
                     <Image Source="\\sysprofiles.adm.vvsu.ru\STUDENTRPROFILES$\richard_mg\Desktop\Новая папка\images\thezdox.jpg"></Image>
                 </MenuItem.Icon>
@@ -24,8 +24,30 @@
         <TextBlock Name="TextBlock" HorizontalAlignment="Left" Margin="664,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="141" Width="128"/>
         <PasswordBox HorizontalAlignment="Left" Height="29" Margin="311,249,0,0" VerticalAlignment="Top" Width="182"/>
         <TextBox HorizontalAlignment="Left" Height="104" Margin="26,44,0,0" TextWrapping="Wrap" Text="ахахахахахахахахахахахха" VerticalAlignment="Top" Width="232"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="78,257,0,0" VerticalAlignment="Top" Width="105" Height="19" Click="Button_Click_1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="46" Margin="355,75,0,0" VerticalAlignment="Top" Width="138" Click="Button_Click_2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="78,257,0,0" VerticalAlignment="Top" Width="105" Height="19" Click="Button_Click_1">
+            <Button.ToolTip>
+                <ToolTip>
+                    здесь был хрущь
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Height="46" Margin="355,75,0,0" VerticalAlignment="Top" Width="138" Click="Button_Click_2">
+            <Button.ToolTip>
+                <ToolTip>
+                   открыть тест
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        <StackPanel>
+            <Button Content="Button" HorizontalAlignment="Left" Height="31" Margin="355,370,0,0" VerticalAlignment="Top" Width="138" MouseLeave="Button_MouseLeave" MouseEnter="Button_MouseEnter" Click="Button_Click_3"/>
+            <Popup x:Name="popup1" StaysOpen="False" Placement="Mouse" MaxWidth="180"
+         AllowsTransparency="True"  >
+                <TextBlock TextWrapping="Wrap" Width="180" Background="LightPink" Opacity="0.8" >
+            Чтобы узнать больше, посетите сайт metanit.com
+                </TextBlock>
+            </Popup>
+        </StackPanel>
+            
 
     </Grid>
 </Window>

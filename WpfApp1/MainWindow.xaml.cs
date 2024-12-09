@@ -61,5 +61,25 @@ namespace WpfApp1
             window1.Show();
             this.Close();
         }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            popup1.IsOpen = true;
+        }
+
+        private void Button_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Button_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
